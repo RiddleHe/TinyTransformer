@@ -23,9 +23,8 @@ lr = 3e-4
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # We always start with a dataset to train on. Let's download the tiny shakespeare dataset
-!wget https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt
 
-with open('input.txt', 'r', encoding='utf-8') as f:
+with open('wittgenstein.txt', 'r', encoding='utf-8') as f:
   text = f.read()
 
 chars = sorted(list(set(text)))
