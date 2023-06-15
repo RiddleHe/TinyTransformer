@@ -14,10 +14,10 @@ import torch.nn.functional as F
 class Head(nn.Module):
   def __init__(self, head_size):
     super().__init__()
-    self.key = nn.Linear(n_emb, head_size)
-    self.query = nn.Linear(n_emb, head_size)
-    self.value = nn.Linear(n_emb, head_size)
-    self.register_buffer('tril', torch.tril(torch.ones((block_size, block_size))))
+    self.key = nn.Linear(n_emb, head_size, bias=False)
+    self.query = nn.Linear(n_emb, head_size, bias=False)
+    self.value = nn.Linear(n_emb, head_size, bias=False)
+    self.register_buffer('tril', torch.tril(torch.ones(block_size, block_size)))
     self.dropout = nn.Dropout(dropout)
 
   def forward(self, x):
@@ -109,7 +109,7 @@ class TinyGPT(nn.Module):
   def generate(self, idx, max_tokens):
     for _ in range(max_tokens):
       idx_cond = idx[:, -block_size:]
-      logits, loss = self.forward(idx_cond) # logits (B, T, C)
+      logits, loss = self(idx_cond) # logits (B, T, C)
       logits = logits[:, -1, :]
       probs = F.softmax(logits, dim=-1)
       idx_next = torch.multinomial(probs, n_sample=1)
