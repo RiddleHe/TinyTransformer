@@ -1,6 +1,6 @@
 # TinyTransformer
 
-A transformer language model that predicts the next token given a sequence of characters. A character-level GPT. For example, given it a mass database of a writer's (say Shakespeare's) writing, it can imitate the style of that writer and creates new writings on the go.
+A transformer language model that predicts the next token given a sequence of characters. A character-level GPT. For example, given it a mass database of a writer's (say Jk Rowling's) writing, it can imitate the style of that writer and creates new writings on the go.
 
 ## Technologies
 
@@ -16,16 +16,9 @@ A transformer language model that predicts the next token given a sequence of ch
 
 - Can generate a preset length of text that has clear style similarities with the training data, such as: 
 
-> CATER:
-> Thy brother Richard, the troubles Warwick
-> Thou camest kill'd no learn to-morrow
-> Whereof calls more than my sorrow's grandam both
-> In O'ercapes laughtens on me. Be come of wife,
-> Be she, although that 'jump council for you;
-> In proof, day before you of them act,
-> Will not shame up out aroof; let lift one.
-> These fair placess-etrawes thus be placed withal
-> Shows on himself to my lurking and roar
-> As he wauld loss among my sorrow's royal,
-> Be when thine another grice' commonies;
-> Aways it not sooth.
+> Dumnight..” 
+
+> He saw of the tried’e Rach as every staked. 
+
+> As Harry codue foung it. Malfoy mad, Hermious a swer red, but was a refy buin inside yourself beetwo it wish ince with when eyes guarse fang of all, of they talkemat packlabe, the catching. Harry haddoing or seter; scaresping a here her noumboder 
+and her arm inside the way and beefore flucirs. Snraff looked batching over sorts. 
