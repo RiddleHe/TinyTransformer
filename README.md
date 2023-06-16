@@ -4,11 +4,11 @@ A transformer language model that predicts the next token given a sequence of ch
 
 ## Technologies
 
-- Implement multiple self-attention heads. Each has a trainable weighted matrix that represents how much each token of a given sequence prior to a token is affiliated with that token.
+- Implemented multiple self-attention heads. Each has a trainable weighted matrix that represents how much each token of a given sequence prior to a token is affiliated with that token.
 
-- Implement a combination of communication and computation to represent the relationship between tokens. Communication between tokens is done by self-attention heads. Computation of the result is done by feed forward layers.
+- Implemented a combination of communication and computation to represent the relationship between tokens. Communication between tokens is done by self-attention heads. Computation of the result is done by feed forward layers.
 
-- Optimize the training performance in such a deep neural network with multiple strategies. They include layer normalization, creating residual connections, and dropout elements from the output of certain layers.
+- Optimized the training performance in such a deep neural network with multiple strategies. They include layer normalization, creating residual connections, and dropout elements from the output of certain layers.
 
 ## Performance
 
